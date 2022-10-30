@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content=#58b77a>
-  <title>Hello World | Vindaugar的博客</title>
+  <title>关于网站下一次大更新的想法 | Vindaugar的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Vindaugar">
   <meta name="keywords" content="">
@@ -73,9 +73,9 @@
       <div class="page-title">
         <div class="avatar"><a href="/"><img src="https://wizard-tool.oss-cn-beijing.aliyuncs.com/vindaugar-avatar.jpg" alt="Vindaugar"></a></div>
         <span>2022-10-30</span>
-        <!-- <h2>Hello World</h2> -->
-        <h2>Hello World</h2>
-        
+        <!-- <h2>关于网站下一次大更新的想法</h2> -->
+        <h2>关于网站下一次大更新的想法</h2>
+        <div class="tags"><i class="fa fa-tag"></i><a class="tag-none-link" href="/tags/%E8%A7%84%E5%88%92/" rel="tag">规划</a></div>
         <div class="social-links">
     <a href="https://github.com/Vindaugar" target="_blank" title="social-link"><i class="fa fa-github fa-fw"></i></a>
     <a href="https://weibo.com/u/5824929282" target="_blank" title="social-link"><i class="fa fa-weibo fa-fw"></i></a>
@@ -88,19 +88,25 @@
   <div class="lx-post">
     <div class="lx-entry padding">
       <div>
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h2 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h2><p>魔法工具集网站自2020年6月上线以来，已经拥有了超过百万的浏览量，并在哈利·波特中文粉丝社群内部拥有了一定的知名度。它起源于我在2020年4月，在灰机Club上开发的几个小测试，后来随着访问量的增加，为了不给灰机的服务器增加压力，我专门开设了一个网站用来托管这些测试。整个网站的建立其实是十分仓促的，包括域名、网站名称、logo和页面设计都来不及仔细推敲，以至于两年来，仓促完成的设计是这个网站最大的历史遗留问题（比方说这个发布博客的网站也是个仓促上马的项目，后面还得跟着网站一起改……）。在开发新网站之前，我汇总整理了目前魔法工具集网站存在的问题。</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol>
+<li>访问速度不佳。这是因为网站的服务器位于中国香港，同时使用了Cloudflare作为CDN。此前使用的优化方式，主要是将部分依赖库换成大陆的源，然后利用阿里云oss存储图片。</li>
+<li>部分页面对移动端适配不好。“巫师名片”生成的图片在iOS以外的移动端系统上有时候保存不下来。当然也不排除一些用户直接在App的内置浏览器打开，使得图片无法顺利保存。</li>
+<li>网页设计不统一。因为开发时间不同，所以各个页面的主题不统一，例如最早的网页使用Sergey Pozhilov的模板制作，后来首页被换成Greyscale模板；此外，英文版“巫师名片“采用Bootstrap的默认主题，而守护神测试使用额外设计的页面样式。</li>
+<li>开发习惯不好使网站代码的维护难度增加。最早在开发时没有使用git等工具进行版本管理，也没有使用类似Hexo的网站生成工具，完全是手动复制粘贴各个页面的代码。这么做的结果是，后面想在网站加内容的难度会很大（比方说，导航栏和页眉页脚需要一个一个页面修改）。</li>
+</ol>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol>
+<li>针对访问速度，将换用其他的CDN进行加速，并启用在大陆备案的新域名。</li>
+<li>针对页面设计和移动端适配，整个网站都将被重构，同时引入git作为版本控制工具。</li>
+<li>“魔法工具集”这个名字以及域名的修改成本极高，不仅仅是修改网站的代码，还涉及到修改数个自媒体平台的用户名。社交账号和网站突然改名会对用户造成很大的困扰。同样地，魔法工具集的“魔杖地球”logo也难以修改，虽然这个logo上的“短粗”魔杖总被当成油条或法棍……</li>
+</ol>
+<h2 id="新网站的设计理念"><a href="#新网站的设计理念" class="headerlink" title="新网站的设计理念"></a>新网站的设计理念</h2><p>在设计魔法工具集的新网站时，我将考虑以下几个方面：</p>
+<ol>
+<li>多语言适配：为网站的主要页面（不包含中文版测试）制作英文版。</li>
+<li>移动端适配：在开发时注重适配移动端，尤其是适配配置不好、屏幕小、显示效果差的设备。</li>
+<li>优化代码：利用多种途径优化代码，方便日后维护。</li>
+<li>统一的主题风格：新网站将使用统一的主题风格，但暂未确定是否增加暗色模式。</li>
+</ol>
 
       </div>
     </div>
@@ -109,12 +115,12 @@
 <div class="lx-navigation">
 	<div class="lx-cover next lx-cover-sm" style="background-image: url(https://wizard-tool.oss-cn-beijing.aliyuncs.com/mounts2.jpg)">
 		<div class="overlay"></div>
-		<a class="copy" href="/2022/10/30/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%AB%99%E4%B8%8B%E4%B8%80%E6%AC%A1%E5%A4%A7%E6%9B%B4%E6%96%B0%E7%9A%84%E6%83%B3%E6%B3%95/">
+		<a class="copy" href="#">
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
 						<span>Next</span>
-						<h3>关于网站下一次...</h3>
+						<h3>No newer post</h3>
 					</div>
 				</div>
 			</div>
@@ -122,12 +128,12 @@
 	</div>
         <div class="lx-cover prev lx-cover-sm" style="background-image: url(https://wizard-tool.oss-cn-beijing.aliyuncs.com/mounts1.jpg)">
 		<div class="overlay"></div>
-		<a class="copy" href="#">
+		<a class="copy" href="/2022/10/30/hello-world/">
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
 						<span>Prev</span>
-						<h3>No older post</h3>
+						<h3>Hello W...</h3>
 					</div>
 				</div>
 			</div>
